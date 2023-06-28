@@ -1,0 +1,551 @@
+
+
+body::-webkit-scrollbar{
+         overflow-x: hidden;
+         display: none;
+         
+}
+
+.navbar-brand{
+        cursor: pointer;
+        margin-left: 85px;
+}
+
+
+.navbar-brand::after{
+        content: '';
+        height: 1.9px;
+        width: 0;
+        border-radius: 1px;
+        background-color: white;
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover::after{
+          width: 100%; 
+          left: 0;
+}
+
+#home{
+        position: relative;
+        top: 6px;
+        right: 200px;
+        font-family: NotoSansRegular,sans-serif;
+        font-size: 15px;
+        /* font-weight: 400; */
+       
+}
+
+#tv-shows{
+        position: relative;
+        top: 6px;
+        right: 400px;
+        font-family: NotoSansRegular,sans-serif;
+        font-size: 14.6px;
+        font-weight: 400;
+}
+
+#movies{
+       position: relative;
+       top: 6px;
+       right: 600px;
+       font-family: NotoSansRegular,sans-serif;
+       font-size: 14.8px;
+       font-weight: 400;
+}
+
+.content .movies{
+                border: 3.5px solid #0F0617;
+                border-radius: 7px;
+                cursor: pointer;
+                position: relative;
+                top: 110px;
+                left: 40px;
+                transition: all 0.3s linear 0s;
+}
+
+.content .movies:hover{
+               transform: scale(0.9,0.9);
+
+}
+
+
+
+.trending-movies .top-movies{
+        border: 3.5px solid #0F0617;
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        top: 160px;
+        left: 40px;
+        transition: all 0.3s linear 0s;
+}
+
+ .trending-movies .top-movies:hover{
+       transform: scale(0.9,0.9);
+} 
+
+
+.rating{
+        width: fit-content;
+        text-shadow: 6px 6px 1px black;
+        -webkit-text-stroke: 7px transparent;
+        background: black;
+        cursor: pointer;
+        -webkit-background-clip: text;
+         color: white;
+         font-family: NotoSansBold,sans-serif;
+         font-size: 6rem;
+         font-weight: 700;
+         line-height: 1em;
+         position: relative;
+         top: -230px;
+         left: 220px;
+         display: flex;
+         font-family: NotoSansBold,sans-serif;
+}
+
+.rating .two{
+                padding: 0 0 0 180px;
+
+}    
+
+
+.rating .three{
+        padding: 0 0 0 190px;
+
+} 
+
+.rating .four{
+        padding: 0 0 0 185px;
+
+} 
+
+.rating .five{
+        padding: 0 0 0 190px;
+
+} 
+
+.rating .six{
+        padding: 0 0 0 190px;
+
+} 
+   
+.hits #Superhit{
+        border: 3.5px solid #0F0617;
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        top: 115px;
+        left: 40px;
+        transition: all 0.3s linear 0s;
+}
+
+ .hits #Superhit:hover{
+       transform: scale(0.9,0.9);
+}   
+
+
+
+.languages #choose-lang{
+                 height: 140px;
+                 width: 237px;
+                 cursor: pointer;
+                 border: 5px solid #0F0617;
+                 border-radius: 10px;
+                 position: relative;
+                 top: 150px;
+                 left: 40px;
+                 transition: all 0.3s linear 0s;
+}
+
+.languages #choose-lang:hover{
+                   transform: scale(0.9,0.9);
+}
+
+
+.IMDB #high-rated{
+        border: 3.5px solid #0F0617;
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        top: 200px;
+        left: 40px;
+        transition: all 0.3s linear 0s;
+}
+
+.IMDB #high-rated:hover{
+       transform: scale(0.9,0.9);
+}   
+
+
+.top-picks #rented{
+        border: 3.5px solid #0F0617;
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        top: 255px;
+        left: 40px;
+        transition: all 0.3s linear 0s;
+}
+
+.top-picks #rented:hover{
+       transform: scale(0.9,0.9);
+}   
+
+
+.english #eng-movies{
+        border: 3.5px solid #0F0617;
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        top: 305px;
+        left: 40px;
+        transition: all 0.3s linear 0s;
+}
+
+.english #eng-movies:hover{
+       transform: scale(0.9,0.9);
+} 
+
+
+
+.section #catagories{
+        height: 170px;
+        width: 288px;
+        border: 6px solid #0F0617;
+        border-radius: 13px;
+        cursor: pointer;
+        position: relative;
+        top: 355px;
+        left: 32px;
+        transition: all 0.3s linear 0s;
+}
+
+.section #catagories:hover{
+       transform: scale(0.9,0.9);
+} 
+
+
+.news #channels{
+        height: 200px;
+        width: 363px;
+        border: 8px solid #0F0617;
+        border-radius: 16px;
+        cursor: pointer;
+        position: relative;
+        top: 410px;
+        left: 32px;
+        transition: all 0.3s linear 0s;
+}
+
+.news #channels:hover{
+       transform: scale(0.9,0.9);
+}   
+
+
+.name{
+         display: flex;
+         justify-content: space-between;
+        
+
+}
+.name .tV-name{
+        color: white; 
+        font-size: 18px;
+        position: relative;
+        cursor: pointer;
+        top: 420px; 
+} 
+
+.Top1{ 
+        left: 40px;  
+}
+
+.Top2{
+        left: -45px;
+        
+}
+
+.Top3{
+         right: 150px;
+}
+
+.Top4{
+          right: 300px;
+}
+
+
+footer{
+          height: 550px;
+          width: 100%;
+          position: relative;
+          top: 500px;
+          background-color: #12091d;
+         
+          
+}
+
+.download {
+               width: fit-content;
+               display: flex;
+               position: relative;
+               top: 2rem;
+               left: 6rem;
+               gap: .8rem;
+               cursor: pointer;
+}
+
+h6{
+        color: white;
+        position: relative;
+        left: 5px;
+}
+
+.download img{
+                 margin: -5px 0 0 0;
+
+}
+
+.social-media{
+           display: flex;
+           flex-direction: row-reverse;
+           position: relative;
+           right: 22rem;
+           cursor: pointer; 
+}
+
+ .social-media a{
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         width: 40px;
+         height: 40px;
+         color: white;
+         background-color: #FFFFFF15;
+         border-radius: 50%;
+         text-decoration: none;
+         transition: all 0s ease;
+} 
+ 
+.social{
+          position: relative;
+          bottom: 0.5rem;
+          right: .2rem;
+}
+
+.fb{
+        left: 15.8rem;
+      
+}   
+
+.ig{
+        left: 16.5rem;
+}
+
+.tw{
+        left: 24.7rem;
+}
+
+.yt{
+        left: 20.4rem;
+}
+
+.ig:hover{
+        background-color:  rgb(253, 57, 155);
+        color: white;
+        border: 2px solid rgb(253, 57, 155);
+    }
+    
+    .fb:hover{
+        background-color:  rgb(101, 101, 255);
+        color: white;
+        border: 2px solid rgb(101, 101, 255);
+    }
+    
+    .tw:hover{
+        background-color:  #00acee;
+        color: white;
+        border: 2px solid #00acee;
+    }
+    .yt:hover{
+         background-color: red;
+         color: white;
+         border: 2px solid red;
+    }
+
+.help-line{
+        width: fit-content;
+        display: flex;
+        color: #FFFFFFB2;
+        position: relative;
+        top: 3rem;
+        left: 6rem;
+        gap: 1.8rem;
+        font-size: 0.76rem;
+        cursor: pointer; 
+}
+
+ .about1:hover{
+          color: #9823fe;
+}
+
+.about2:hover{
+        color: #9823fe;
+}
+
+.about3:hover{
+        color: #9823fe;
+}
+
+.about4:hover{
+        color: #9823fe;
+}
+
+.info{
+         display: flex;
+         cursor: pointer;
+
+}
+
+.contents div{
+        position: relative;
+        color: white;
+        left: 6rem;
+        top: 6rem;
+        font-size: 13px;
+        font-weight: 600;
+}
+
+.contents p{
+        position: relative;
+        color: #FFFFFFB2;
+        left: 6rem;
+        top: 7rem;
+        font-size: 11px;
+        transition: all 0.5s ease;
+          
+}
+
+
+.contents2{
+        position: relative;
+        color: white;
+        left: 17rem;
+        top: 6rem;
+        font-size: 13px;
+        font-weight: 600; 
+}
+
+
+
+
+.contents2 p{
+        position: relative;
+        color: #FFFFFFB2;
+        top: 1rem;
+        font-size: 11px;
+        transition: all 0.2s ease;
+          
+}
+
+
+.contents3{
+        position: relative;
+        color: white;
+        left: 30rem;
+        top: 6rem;
+        font-size: 13px;
+        font-weight: 600; 
+}
+
+
+.contents3 p{
+        position: relative;
+        color: #FFFFFFB2;
+        top: 1rem;
+        font-size: 11px;
+        transition: all 0.5s ease;
+          
+}
+
+
+.contents4{
+        position: relative;
+        color: white;
+        left: 42rem;
+        top: 6rem;
+        font-size: 13px;
+        font-weight: 600; 
+}
+
+
+.contents4 p{
+        position: relative;
+        color: #FFFFFFB2;
+        top: 1rem;
+        font-size: 11px;
+        transition: all 0.5s ease;
+          
+}
+
+.copyright{
+        width: fit-content;
+        color: #FFFFFF80;
+        position: relative;
+        left: 6rem;
+        top: 12.5rem;
+        font-size: 13px;
+}
+
+.developer{
+        color: hsl(0, 4%, 76%);
+        font-weight: 500;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        right: 7rem;
+        top: 10rem;
+        
+}
+
+.info p:hover{
+        color: #9823fe;
+        transform: translateX(3px);           
+}
+
+
+.search{
+    color: white;    
+    position: relative;
+    right: 6rem;
+    top: 0.5rem;
+    height: 38px;
+    width: 333px;
+    border-radius: 6px;
+    background-color: #0F0617;
+    border: 0.1px solid #554f4f;
+    padding: 0 0 0 41px;
+    font-size: .78rem;
+    transition: all 0s linear;
+    outline: none;
+
+}
+
+input[type="search"]:focus{
+        outline:1px solid #a785ff;
+        border: none;
+}
+/* .search:hover{
+        border: 0.1px solid #9823fe;  
+} */
+
+
+.fa-solid{
+        position: relative;
+        right: 25.9rem;
+        top: 0.9rem;
+}
